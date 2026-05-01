@@ -3,41 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DAKOT</title>
+  <title>DALKOM</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f8fb;
+      background: linear-gradient(#d9f1ff, #f4faff);
       text-align: center;
     }
 
     nav {
-      background: #333;
-      padding: 10px;
+      background: #1e3a5f;
+      padding: 12px;
     }
 
     nav a {
       color: white;
-      margin: 10px;
+      margin: 15px;
       text-decoration: none;
       font-weight: bold;
     }
 
     header {
-      background-color: #4a90e2;
+      background: linear-gradient(to right, #4facfe, #00c6ff);
       color: white;
-      padding: 30px;
-      font-size: 24px;
+      padding: 40px;
+      font-size: 26px;
+      font-weight: bold;
     }
 
     h1 {
-      color: #2c3e50;
+      color: #1e3a5f;
     }
 
     h2 {
-      color: #6a1b9a;
+      color: #1565c0;
     }
 
     .container {
@@ -49,24 +50,31 @@
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
+      margin-top: 20px;
     }
 
     .card {
       background: white;
       padding: 15px;
-      border-radius: 10px;
-      width: 200px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      width: 220px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
+      margin-top: 15px;
+      padding: 12px 25px;
       background-color: #25D366;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-weight: bold;
     }
 
@@ -75,7 +83,7 @@
     }
 
     .fade {
-      animation: aparecer 2s ease;
+      animation: aparecer 1.5s ease;
     }
 
     @keyframes aparecer {
@@ -83,10 +91,18 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    .info {
+      margin-top: 40px;
+      background: #e3f2fd;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
     footer {
       margin-top: 30px;
       padding: 15px;
-      background-color: #ddd;
+      background-color: #1e3a5f;
+      color: white;
     }
   </style>
 </head>
@@ -100,21 +116,19 @@
 </nav>
 
 <header>
-  🍓 DAKOT - Exportación de Berries
+  🍓 DALKOM - Exportación Premium
 </header>
 
 <div class="container">
 
-  <h1 class="fade">Bienvenidos a DAKOT 🍓</h1>
+  <h1 class="fade">Bienvenidos a DALKOM</h1>
 
   <h2>Exportamos berries a Corea ✈️</h2>
 
-  <p>
-    Somos una empresa dedicada a la exportación de frutas frescas de alta calidad.
-  </p>
+  <p>Calidad mexicana llevada al mundo 🌎</p>
 
-  <!-- 🔥 TU IMAGEN (usa el nombre exacto) -->
-  <img src="cacoom.jpg" width="300" style="border-radius:10px;">
+  <!-- Imagen principal -->
+  <img src="cacoom.jpg" width="320" style="border-radius:15px; margin-top:15px;">
 
   <h2 id="productos">Nuestros productos</h2>
 
@@ -123,15 +137,29 @@
     <div class="card">
       <img src="cacoom.jpg" width="100%">
       <h3>Fresas</h3>
-      <p>Alta calidad de exportación</p>
+      <p>Fresas frescas de exportación</p>
     </div>
 
     <div class="card">
       <img src="cacoom.jpg" width="100%">
-      <h3>Arándanos</h3>
-      <p>Producto premium</p>
+      <h3>Blueberries</h3>
+      <p>Alta calidad premium</p>
     </div>
 
+    <div class="card">
+      <img src="cacoom.jpg" width="100%">
+      <h3>Mix de Berries</h3>
+      <p>Combinación deliciosa 🍓🫐</p>
+    </div>
+
+  </div>
+
+  <!-- Sección extra PRO -->
+  <div class="info">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>✔ Calidad premium garantizada</p>
+    <p>✔ Exportación segura y rápida</p>
+    <p>✔ Productos frescos directo del campo</p>
   </div>
 
   <h2 id="contacto">Contacto</h2>
@@ -139,7 +167,7 @@
   <p>WhatsApp: 5561360310</p>
 
   <a class="btn" href="https://wa.me/5215561360310">
-    Contáctame por WhatsApp
+    Contáctanos
   </a>
 
 </div>
@@ -151,7 +179,7 @@ style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white;
 </a>
 
 <footer>
-  © 2026 DAKOT - Todos los derechos reservados
+  © 2026 DALKOM - Exportación de Berries
 </footer>
 
 </body>
