@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DALKOM</title>
+  <title>DAKOT</title>
 
   <style>
     body {
@@ -13,16 +13,23 @@
       text-align: center;
     }
 
-    header {
-      background-color: #4a90e2;
+    nav {
+      background: #333;
+      padding: 10px;
+    }
+
+    nav a {
       color: white;
-      padding: 20px;
-      font-size: 24px;
+      margin: 10px;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    .container {
-      padding: 20px;
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 30px;
+      font-size: 24px;
     }
 
     h1 {
@@ -33,9 +40,23 @@
       color: #6a1b9a;
     }
 
-    p {
-      color: #555;
-      font-size: 16px;
+    .container {
+      padding: 20px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .btn {
@@ -53,40 +74,67 @@
       background-color: #1ebe5d;
     }
 
-    img {
-      margin-top: 20px;
-      border-radius: 10px;
+    .fade {
+      animation: aparecer 2s ease;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     footer {
       margin-top: 30px;
       padding: 15px;
       background-color: #ddd;
-      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#productos">Productos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
 <header>
-  🍓 DALKOM - Exportación de Berries
+  🍓 DAKOT - Exportación de Berries
 </header>
 
 <div class="container">
 
-  <h1>Bienvenidos a DALKOM</h1>
+  <h1 class="fade">Bienvenidos a DAKOT 🍓</h1>
 
   <h2>Exportamos berries a Corea ✈️</h2>
 
   <p>
     Somos una empresa dedicada a la exportación de frutas frescas de alta calidad.
-    Nuestro objetivo es llevar lo mejor de México al mundo.
   </p>
 
-  <img src="cacoom.jpg" width="300">
+  <!-- 🔥 TU IMAGEN (usa el nombre exacto) -->
+  <img src="cacoom.jpg" width="300" style="border-radius:10px;">
 
-  <h2>Contacto</h2>
+  <h2 id="productos">Nuestros productos</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="cacoom.jpg" width="100%">
+      <h3>Fresas</h3>
+      <p>Alta calidad de exportación</p>
+    </div>
+
+    <div class="card">
+      <img src="cacoom.jpg" width="100%">
+      <h3>Arándanos</h3>
+      <p>Producto premium</p>
+    </div>
+
+  </div>
+
+  <h2 id="contacto">Contacto</h2>
 
   <p>WhatsApp: 5561360310</p>
 
@@ -96,8 +144,14 @@
 
 </div>
 
+<!-- Botón flotante -->
+<a href="https://wa.me/5215561360310" 
+style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%; text-decoration:none;">
+💬
+</a>
+
 <footer>
-  © 2026 DALKOM - Todos los derechos reservados
+  © 2026 DAKOT - Todos los derechos reservados
 </footer>
 
 </body>
